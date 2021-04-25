@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/rl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.example.zhiliao.Tools.SearchView.SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:textSizeSearch="5dp"
+            app:textColorSearch="#3f51b5"
+            app:textHintSearch="输入查询关键字"
+            app:searchBlockHeight="150"
+            app:searchBlockColor="#ffffff"
+            />
+    <ImageView
+        android:id="@+id/Write"
+        android:layout_height="20dp"
+        android:layout_width="20dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/add"
+        android:layout_margin="10dp"
+        />
+    </RelativeLayout>
+<ListView
+    android:id="@+id/listview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    />
+</LinearLayout>

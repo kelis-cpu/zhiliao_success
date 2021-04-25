@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/leftjiantou"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="隐私设置"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout><!--顶部-->
+<TextView
+    android:text="私信管理"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="允许陌生人私信我"
+            android:layout_margin="10dp"/>
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/send_letter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</LinearLayout>

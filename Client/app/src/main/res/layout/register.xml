@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECD58E">
+<TableLayout
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="20dp"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="0">
+    <TableRow>
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/usrname"
+            android:hint="昵称(用户名)"
+            android:drawableLeft="@drawable/usrname"
+            android:drawablePadding="10dp"
+            />
+    </TableRow>
+    <TableRow>
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/pwd1"
+            android:hint="登陆密码"
+            android:drawableLeft="@drawable/pwd2"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"
+            />
+    </TableRow>
+    <TableRow>
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/pwd2"
+            android:hint="确认密码"
+            android:drawableLeft="@drawable/pwd2"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"
+            />
+    </TableRow>
+    <TableRow>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/phone"
+                android:hint="+86  | 请输入手机号"
+                android:drawableLeft="@drawable/phone1"
+                android:drawablePadding="10dp"
+                />
+    </TableRow>
+    <TableRow>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:drawableLeft="@drawable/yzm"
+                android:id="@+id/code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/get_code"
+                android:background="@null"
+                android:hint="验证码"
+                android:maxLength="6"
+                android:inputType="number"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/get_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="获取验证码"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </TableRow>
+</TableLayout><!--注册信息部分-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp">
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我已阅读并同意"
+        android:layout_marginLeft="60dp"/>
+    <TextView
+        android:id="@+id/protocol"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="《用户注册协议》"
+        android:textSize="20sp"
+        android:textColor="#7CC6E7"/>
+</LinearLayout><!--用户协议部分-->
+<Button
+    android:id="@+id/register"
+    android:layout_marginTop="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="注      册"
+    android:layout_gravity="center_horizontal"
+    android:enabled="false"
+    /><!--注册-->
+</LinearLayout>

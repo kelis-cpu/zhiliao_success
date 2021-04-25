@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/article_detail"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+<include layout="@layout/public_head"/>
+    <include layout="@layout/article_item"/>
+        <TextView
+            android:id="@+id/thumb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <ListView
+        android:id="@+id/commentList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/loadMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+    <EditText
+        android:id="@+id/comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="写评论"
+        android:gravity="bottom"
+        android:imeOptions="actionDone"
+        android:maxLines="1"
+        android:inputType="text"/>
+</LinearLayout>

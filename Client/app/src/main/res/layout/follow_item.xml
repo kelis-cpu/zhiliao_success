@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/dog"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:layout_toRightOf="@id/avatar"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="此人很懒，什么也没写"
+        android:layout_toRightOf="@id/avatar"
+        android:layout_below="@id/username"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/follow_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关注"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

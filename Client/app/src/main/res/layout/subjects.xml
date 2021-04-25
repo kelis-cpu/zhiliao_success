@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<com.example.zhiliao.Tools.SearchView.SearchView
+    android:id="@+id/search_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:textSizeSearch="5dp"
+    app:textColorSearch="#3f51b5"
+    app:textHintSearch="输入查询关键字"
+    app:searchBlockHeight="150"
+    app:searchBlockColor="#ffffff"
+    />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sub_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/english"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/english"
+            app:layout_constraintCircle="@id/point"
+            app:layout_constraintCircleAngle="0"
+            app:layout_constraintCircleRadius="150dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/chinese"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/chinese"
+            app:layout_constraintCircle="@id/point"
+            app:layout_constraintCircleAngle="40"
+            app:layout_constraintCircleRadius="150dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/math"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/math"
+            app:layout_constraintCircle="@id/point"
+            app:layout_constraintCircleAngle="80"
+            app:layout_constraintCircleRadius="150dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/physics"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/physics"
+            app:layout_constraintCircle="@id/point"
+            app:layout_constraintCircleAngle="120"
+            app:layout_constraintCircleRadius="150dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/chemistry"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/chemistry"
+            app:layout_constraintCircle="@id/point"
+            app:layout_constraintCircleAngle="160"
+            app:layout_constraintCircleRadius="150dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/biolgy"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/biolgy"
+            app:layout_constraintCircle="@id/point"
+            app:layout_constraintCircleAngle="200"
+            app:layout_constraintCircleRadius="150dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/political"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/politcal"
+            app:layout_constraintCircle="@id/point"
+            app:layout_constraintCircleAngle="240"
+            app:layout_constraintCircleRadius="150dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/history"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/history"
+            app:layout_constraintCircle="@id/point"
+            app:layout_constraintCircleAngle="280"
+            app:layout_constraintCircleRadius="150dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/gro"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/gro"
+            app:layout_constraintCircle="@id/point"
+            app:layout_constraintCircleAngle="320"
+            app:layout_constraintCircleRadius="150dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/point"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="Study!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

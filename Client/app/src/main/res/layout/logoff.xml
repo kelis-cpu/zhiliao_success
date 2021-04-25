@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<include layout="@layout/public_head"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="账号注销"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_margin="20dp"/>
+    <Button
+        android:id="@+id/logoff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="已同意，继续注销"
+        android:textColor="#ffffff"
+        android:background="#E20C0C"
+        android:layout_gravity="bottom"/>
+</LinearLayout>
